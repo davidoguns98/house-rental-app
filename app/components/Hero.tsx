@@ -15,9 +15,16 @@ const Hero = () => {
           placeholder="Search for your preffered Area"
           className="min-w-[500px] border-none outline-none ring-offset-4 ring-offset-purple-300 px-3 rounded-md md:w-[70%] h-[42px]"
         />
-        <button className="px-5 py-3 ml-[-4px] rounded-md hover:bg-blue-400 transition-all bg-blue-500 text-white">
-          Search
-        </button>
+        <select className="select select-ghost w-full max-w-md">
+          <option disabled selected>
+            Sort By
+          </option>
+          <option>Latest</option>
+          <option>Rooms</option>
+          <option>location</option>
+          <option>Pricing (min to max)</option>
+          <option>Pricing (max to min)</option>
+        </select>
       </div>
     </section>
   );
